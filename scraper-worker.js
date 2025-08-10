@@ -56,7 +56,7 @@ parentPort.on('message', msg => {
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page = await browser.newPage();
 
-  const url = GAME_URL || 'https://example.com/crash-game';
+  const url = GAME_URL || 'https://eg1xbet.com/en/games/crash';
   await page.goto(url, { waitUntil: 'networkidle2' });
   parentPort.postMessage({ type: 'log', text: `Opened ${url}` });
 
