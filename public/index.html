@@ -1,1 +1,42 @@
-<!DOCTYPE html><html><body>Dashboard placeholder</body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Crash Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Crash Logger Dashboard</h1>
+
+    <div class="top-row">
+      <div class="card">
+        <h3>Latest prediction</h3>
+        <div id="prediction">Loading...</div>
+      </div>
+
+      <div class="card">
+        <h3>Stats (last 100)</h3>
+        <div id="stats">Loading...</div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Crash Multipliers (last 100)</h3>
+      <canvas id="multiplierChart"></canvas>
+    </div>
+
+    <div class="table-card">
+      <h3>Recent Rounds</h3>
+      <table id="roundsTable">
+        <thead><tr><th>#</th><th>Time</th><th>Mult</th><th>Bets</th><th>Bettors</th><th>Winnings</th><th>Cap</th><th>Seed</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
