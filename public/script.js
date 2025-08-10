@@ -1,0 +1,1 @@
+// Client dashboard JS placeholder
